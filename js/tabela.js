@@ -1,9 +1,10 @@
 var properties = [
-	'name',
-	'wins',
-	'draws',
-	'losses',
-	'total',
+	'nome',
+	'nota1',
+	'nota2',
+	'nota3',
+	'nota4',
+	'media',
 ];
 
 $.each(properties, function(i, val) {

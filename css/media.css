@@ -89,3 +89,34 @@ h1, h2, h3, h4, h5, h6 {
     content: '(asc)';
   }
 }
+
+/* Estilo para o botão de voltar */
+.back-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-button a {
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.back-button button {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Aparece como cursor de mão */
+  transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+/* Efeito de hover */
+.back-button button:hover {
+  background-color: #45a049; /* Cor de fundo mais escura quando o botão for clicado */
+}
+
+/* Efeito de foco (quando o botão está selecionado) */
+.back-button button:focus {
+  outline: none; /* Remove o contorno padrão do foco */
+}

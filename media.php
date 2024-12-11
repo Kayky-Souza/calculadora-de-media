@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $insertDados = "INSERT INTO alunos(aluno, nota1, nota2, nota3, nota4, media) VALUES ('$aluno', '$nota1', '$nota2', '$nota3', '$nota4', '$media')";
     $connection->query($insertDados);
 
-    $url = "index.php";
+    $url = "listar.php";
 
     header('Location: '.$url);
 
@@ -24,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
-<html lang="pt-br">
+<!-- mostra o aluno recem adicionado  -->
+<!-- <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,12 +38,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h2>Média das notas</h2>
 	<div class="table">
 		<div class="table-header">
-            <div class="header__item"><a id="name" class="filter__link" href="#">Aluno</a></div>
-			<div class="header__item"><a id="name" class="filter__link" href="#">Nota 1</a></div>
-			<div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Nota 2</a></div>
-			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Nota 3</a></div>
-			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Nota 4</a></div>
-			<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Média</a></div>
+            <div class="header__item"><a id="nome" class="filter__link" href="#">Aluno</a></div>
+			<div class="header__item"><a id="nota1" class="filter__link" href="#">Nota 1</a></div>
+			<div class="header__item"><a id="nota2" class="filter__link filter__link--number" href="#">Nota 2</a></div>
+			<div class="header__item"><a id="nota3" class="filter__link filter__link--number" href="#">Nota 3</a></div>
+			<div class="header__item"><a id="nota4" class="filter__link filter__link--number" href="#">Nota 4</a></div>
+			<div class="header__item"><a id="media" class="filter__link filter__link--number" href="#">Média</a></div>
 		</div>
 		<div class="table-content">	
 			<div class="table-row">		
@@ -60,4 +60,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/tabela.js"></script>
 </body>
-</html>
+</html> -->
